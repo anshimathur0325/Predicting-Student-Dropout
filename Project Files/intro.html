@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction</title> 
+</head>
+<body>
+    <h1>Student Drop Out Prediction- Exploratory Data Analysis</h1>
+                <p> This website predits whether someone will drop out or graduate based on the input features. </p>
+                <p> In order to choose these features, I conducted exploratory data analysis and feature selection. </p>
+            <hr style="margin-top:1px;margin-bottom:1px;">
+                <p> The heatmap below shows the relationships between the features of a dataset of students. </p>
+                <img src='/Project Files/static/heatmap.png' alt='Heatmap of features and their relationships with each other' height='25%' width='100%' style="margin-bottom:.5em; margin-top:.5em;">
+                <p> The features that were chosen are the ones that had the highest correlation with the target variable. The number of credits someone was taking seemed to have the most impact, which was surprising at first. </p>
+            <hr style="margin-top:1px;margin-bottom:1px;">
+                <p> The violin plot below shows the relationship between the features and the target variable. Notice the difference between the distributions of students that dropped out vs. graduated.</p>
+                <img src='/Project Files/static/violin.png' alt='Violin chart of the features and their relationship with the target variable.' height='25%' width='100%' style="margin-bottom:.5em; margin-top:.5em;">
+                <p> It was important to me that the input features were easy to understand and interpret. For this reason, I dropped features that a common user of this website would be unable to understand. While this may affect the accuracy of the model, it resulted in a more usable interface. </p>
+                <p> This model was trained using a Random Forest Classifier and achieved an accuracy of .90. </p>
+</body>
+
+
+</html>
